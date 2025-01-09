@@ -54,5 +54,8 @@ $ git rebase -i HEAD~3 \
 
 commit 1
 
+commit2
+
+commit 3
 
     
