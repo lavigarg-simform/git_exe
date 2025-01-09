@@ -52,5 +52,7 @@ $ git rebase -i HEAD~3 \
 
 # 11. change readme from 3rd sub branch of main
 
+commit 1
+
 
     
