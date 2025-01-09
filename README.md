@@ -34,12 +34,20 @@ $ git rebase -i HEAD~3 \
 
     $ git checkout sub_Project_Setup
 
-    $ git rebase main \
+    $ git rebase main 
         -> Successfully rebased and updated refs/heads/sub_Project_Setup.
 
     $ git checkout main
     $ git merge sub_Project_Setup
     $ git push origin main
 
+# 4.Cherrypick
+    $ git log --oneline --all
+        bf940af (HEAD -> sub_Project_Setup) file 4 commit 1 in sub_Project_Setup
+        cd2dece file 3 commit 1 in sub_Project_Setup
+
+    $ git cherry-pick bf940af
+
+    $ git push origin main
 
     
