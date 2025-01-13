@@ -50,4 +50,15 @@ $ git rebase -i HEAD~3 \
 
     $ git push origin main
 
+# Git hooks-
+    .git/hooks/pre-commit:
+        echo "This is a custom git hook befor commit."
+    $ git add .        
+        lavi.garg@SF-CPU-778 gitexe % git commit -m "added .git folder to gitignore"
+        This is a custom git hook befor commit.
+        [main 29bcd37] added .git folder to gitignore
+         3 files changed, 50 insertions(+)
+         create mode 100644 .DS_Store
+         create mode 100644 .gitignore
+         create mode 100644 original-pre-commit-content.txt
     
